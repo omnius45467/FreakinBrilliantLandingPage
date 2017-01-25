@@ -1,3 +1,0 @@
-# FreakinBrilliantLandingPage
-
-## Protected Deploy Branch
