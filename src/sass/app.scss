@@ -9,19 +9,25 @@ p.box {
   padding: 20px;
 }
 p {
+  font-family:"Roboto", sans-serif;
   color: rgba(0, 0, 0, 0.71);
   padding: 0;
   -webkit-font-smoothing: antialiased;
 }
 
 h1,h2,h3,h4,h5,h6 {
+  font-family:"Orbitron", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 h5 > span {
+  font-family:"Orbitron", sans-serif;
   font-size: 14px;
   margin-left: 15px;
   color: #777;
+}
+a{
+  color:black;
 }
 
 nav {
@@ -128,6 +134,7 @@ ul.side-nav.fixed {
 }
 
 .bold > a {
+
   font-weight: bold;
 }
 
@@ -219,7 +226,7 @@ a.button-collapse.top-nav {
 }
 
 #index-banner {
-  background-image: url("img/downtown.jpg");
+  background-image: url("img/sky.jpg");
   background-size:cover;
   .container {
     position: relative;
@@ -929,12 +936,15 @@ body.parallax-demo footer {
 
 .element{
   position:absolute;
-  //z-index:21;
+  font-family: 'Ubuntu', sans-serif;
+  //font-family: 'Orbitron', sans-serif;
+  margin-left:60px;
+  margin-top:-2px;
   font-size:26px;
   color:greenyellow;
 }
 .typed-cursor{
-  color:#ffffff;
+  color:greenyellow;
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
@@ -968,10 +978,22 @@ body.parallax-demo footer {
 
   .brand-logo{
     position:relative;
+
+
     img{
-      width:60px;
+
     }
 
   }
 
 }
+nav .brand-logo{
+  margin-top:5px;
+  width:60px !important;
+}
+
+/*Icon Size*/
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
