@@ -6,17 +6,26 @@
     <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon"
           type="image/png"
           href="img/favicon.png">
     <link rel="stylesheet" href="main.css"/>
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+    <!--<script src="main.js"></script>-->
     <title>FreakingBrilliant</title>
 </head>
 <body>
-<nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">#FreakingBrilliant</a>
+<nav class="black lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="#"><img class="brand-logo" src="img/keyboard.png" alt="" style=""></a>
+        <p class="element"></p>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#">Donate</a></li>
+            <li><a href="http://59daysofcode.com/" class="btn-small waves-effect waves-light orange">Donate</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
@@ -37,7 +46,7 @@
                class="btn-large waves-effect waves-light orange">Join with ...</a>
         </div>
         <br><br>
-
+<div class="large-triangle"></div>
     </div>
 </div>
 
@@ -69,12 +78,25 @@
 
             <div class="col s12 m4">
                 <div class="icon-block">
-                    <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-                    <h5 class="center">Easy to work with</h5>
+                    <h2 class="center light-blue-text"><i class="fa fa-twitter"></i></h2>
+                    <a class="twitter-timeline" data-height="400" href="https://twitter.com/59DaysOfCode">Tweets by omniusAnthropos</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <!--<a class="twitter-timeline" href="https://twitter.com/TwitterDev/timelines/539487832448843776">National Park Tweets - Curated tweets by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+                    <script>window.twttr = (function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0],
+                                t = window.twttr || {};
+                        if (d.getElementById(id)) return t;
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = "https://platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js, fjs);
 
-                    <p class="light">We have provided detailed documentation as well as specific code examples to help
-                        new users get started. We are also always open to feedback and can answer any questions a user
-                        may have about Materialize.</p>
+                        t._e = [];
+                        t.ready = function(f) {
+                            t._e.push(f);
+                        };
+
+                        return t;
+                    }(document, "script", "twitter-wjs"));</script>
                 </div>
             </div>
         </div>
@@ -95,11 +117,13 @@
                 <p class="grey-text text-lighten-4">We are a grassroots movement established in Fresno, California. </p>
             </div>
             <div class="col l3 s12">
-                <h5 class="white-text">Settings</h5>
-                <ul>
-                    <li><a class="white-text" href="#!">Link 1</a></li>
-                    <li><a class="white-text" href="#!">Link 2</a></li>
-                </ul>
+                <h5 class="white-text">Support the Community!</h5>
+                <a href="http://59daysofcode.com/"><img src="img/59doc-womens.png" alt="" style="width:100px;"></a>
+
+                <!--<ul>-->
+                    <!--<li><a class="white-text" href="#!">Link 1</a></li>-->
+                    <!--<li><a class="white-text" href="#!">Link 2</a></li>-->
+                <!--</ul>-->
             </div>
             <div class="col l3 s12">
                 <h5 class="white-text">Connect with Us!</h5>
@@ -116,6 +140,15 @@
         </div>
     </div>
 </footer>
-<!--<script src="main.js"></script>-->
+
+<script>
+
+    $( function(){
+        $(".element").typed({
+            strings: ["#FreakinBri", "#FreakingBrilliant"],
+            typeSpeed: 2
+        });
+    });
+</script>
 </body>
 </html>
