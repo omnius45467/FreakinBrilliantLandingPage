@@ -20,6 +20,13 @@
   },
   "homepage": "https://github.com/omnius45467/FreakinBrilliantLandingPage#readme",
   "devDependencies": {
-    "gulp-gh-pages": "^0.5.4"
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-sass": "^3.1.0",
+    "laravel-elixir": "^6.0.0-15"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "materialize-css": "^0.97.8",
+    "typed": "^0.3.3"
   }
 }
